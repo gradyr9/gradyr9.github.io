@@ -6,25 +6,77 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
+		<h1 class="title">Life Survey</h1>
+  <p class="title"><i>Take this survey to share information about what you think you want to do in the future</i></p>
+<div id="container">
+  <form id="survey-form">
+    <div id="namesection">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Ex: John Smith" required>
+    </div>
+    <div id="emailsection">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Ex: jsmith@gmail.com" required>
+    </div>
+    <div id="agesection">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input type="number" id="number" name="number" min="4" max="100" placeholder="Ex: 18">
+    </div>
+    <div id="dropdownsection">
+      <p>
+        Please select the option that best represents your current occupation
+      </p>
+      <select id="dropdown">
+        <option>Current occupation</option>
+        <option>Elementary School Student</option>
+        <option>Middle School Student</option>
+        <option>High School Student</option>
+        <option>College Student</option>
+        <option>Unemployed</option>
+        <option>Part-time employment</option>
+        <option>Full time Employment</option>
+      </select>
+    </div>
+    <div id="radiosection">
+      <p>Please select the option that best represents your opinion on taking surveys</p>
+      <label for="love">
+        <input id="love" type="radio" name="surveys" value="love" class="radiobuttons">I love surveys!
+      </label>
+      <label for="no-care">
+        <input id="no-care" type="radio" name="surveys" value="no-care" class="radiobuttons">I don't mind taking surveys.
+      </label>
+      <label for="hate">
+        <input id="hate" type="radio" name="surveys" value="hate" class="radiobuttons">I hate taking surveys!
+      </label>
+    </div>
+    <div id="checkboxsection">
+      <p>What topics are you interested in? (Check all that apply)</p>
+      <label for="math">
+        <input id="math" type="checkbox" name="checkbox" value="math" class="checkboxes">Math
+      </label>
+      <label for="science">
+        <input id="science" type="checkbox" name="checkbox" value="science" class="checkboxes">Science
+      </label>
+      <label for="art">
+        <input id="art" type="checkbox" name="checkbox" value="art" class="checkboxes">Art
+      </label>
+      <label for="writing">
+        <input id="writing" type="checkbox" name="checkbox" value="writing" class="checkboxes">Writing
+      </label>
+      <label for="reading">
+        <input id="reading" type="checkbox" name="checkbox" value="reading" class="checkboxes">Reading
+      </label>
+      <label for="technology">
+        <input id="technology" type="checkbox" name="checkbox" value="technology" class="checkboxes">Technology
+      </label>
+      <label for="history">
+        <input id="history" type="checkbox" name="checkbox" value="history" class="checkboxes">History
+      </label>
+    </div>
+    <p>Is there anything else you would like to share about yourself?</p>
+    <textarea id="textbox" placeholder="Enter your comment here"></textarea>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</div>
 	</body>
 </html>
